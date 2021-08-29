@@ -1,0 +1,174 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-08-29T00:31:12.306Z",
+    "__export_source": "insomnia.desktop.app:v2021.5.0",
+    "resources": [
+        {
+            "_id": "req_b875386142c942959d244db4d02b8e2d",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630197026222,
+            "created": 1630195324666,
+            "url": "{{ _.base_url }}/users",
+            "name": "All users",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_cece4ceb1f814aaa9b0e5aee5774e66b",
+                    "name": "user_id",
+                    "value": "4a334cb0-a281-4861-b232-5b5f2187451a",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1630195324666,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "parentId": null,
+            "modified": 1630195279952,
+            "created": 1630195279952,
+            "name": "Challenge 4 - SOLID",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_9f3e34f7ace74edd8664ae8bc2e0781d",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630196962964,
+            "created": 1630195320266,
+            "url": "{{ _.base_url }}/users/4a334cb0-a281-4861-b232-5b5f2187451a",
+            "name": "User profile",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1630195320266,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_fd5e72df0133422eaccad78ccc8ae4f5",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630197035098,
+            "created": 1630195310020,
+            "url": "{{ _.base_url }}/users/759653c5-5738-4cc2-bf52-b04c735b125c/admin",
+            "name": "Set user admin",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_1e51851e9a454b739b51854f716cd5ec"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1630195310020,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_dbae04fccbab4b85b2934ba3a01667a9",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630197012750,
+            "created": 1630195295172,
+            "url": "{{ _.base_url }}/users",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Brum Rodrigues\",\n\t\"email\": \"grodrigues@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_bf74b9b66fab44b1bdf59441093c7c82"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1630195295172,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_f803504267140e18534a7cc4e2b145e800041c8e",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630195337177,
+            "created": 1630195279959,
+            "name": "Base Environment",
+            "data": {
+                "base_url": "http://localhost:3333"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "base_url"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1630195279959,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_f803504267140e18534a7cc4e2b145e800041c8e",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630195279961,
+            "created": 1630195279961,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_abf5c76751fc4b8e905f47057d8285a7",
+            "parentId": "wrk_d58bf9351ee04222b7b76d48b0b8ebab",
+            "modified": 1630195279954,
+            "created": 1630195279954,
+            "fileName": "Challenge 4 - SOLID",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
