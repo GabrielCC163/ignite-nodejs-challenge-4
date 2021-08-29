@@ -6,3 +6,5 @@
 * SOLID
 * Singleton
 * Testes funcionais e de integração com Jest e Supertest
+* Swagger
+* Documentação em **/api-docs**
