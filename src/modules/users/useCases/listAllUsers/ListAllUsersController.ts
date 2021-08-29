@@ -22,7 +22,7 @@ class ListAllUsersController {
       return response.json(allUsers);
     } catch (error) {
       return response.status(400).json({
-        error: "No user found",
+        error: "User not admin",
       });
     }
   }
